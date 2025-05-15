@@ -1,0 +1,163 @@
+prompt_task1_vi = f"""
+Bạn là một chuyên gia kiểm chứng thông tin. Dựa trên các metadata và nội dung đầy đủ của một bài báo tiếng Việt, hãy đánh giá xem thông tin được đề cập có:
+- **Đúng sự thật (Label = 1)**
+- **Sai lệch hoặc gây hiểu nhầm (Label = 0)**
+- **Không rõ ràng, giả định, hoặc không thể kiểm chứng (Label = -1)**
+
+Vui lòng trả về:
+- Label: -1 / 0 / 1
+- Giải thích (bằng tiếng Việt): ngắn gọn, dựa trên logic, dữ kiện công khai hoặc kiến thức khoa học.
+
+Sử dụng các metadata bên dưới để hỗ trợ quá trình đánh giá:
+
+📄 THÔNG TIN BÀI VIẾT:
+- authors: Tác giả bài báo.
+- date_publish: Ngày bài báo được xuất bản.
+- source_domain: Trang web hoặc tên miền đã đăng bài (ví dụ: tuoitre.vn, baomoi.com, vnexpress.net).
+- title: Tiêu đề bài báo, thường tóm tắt thông tin chính.
+- maintext: Nội dung chính của bài báo, chứa thông tin hoặc câu chuyện cần kiểm chứng.
+- language: Ngôn ngữ của bài báo (nên là 'vi').
+- url: Đường dẫn gốc đến bài viết (giúp truy xuất nguồn).
+
+🔍 NHIỆM VỤ:
+Hãy xác định xem bài báo có chứa thông tin đúng sự thật hay không.
+- Dựa vào nguồn công khai, suy luận hợp lý hoặc bằng chứng khoa học để đưa ra đánh giá.
+- Nếu bài báo mang tính **giả định, châm biếm, cảm tính**, hoặc thông tin **không thể xác minh**, hãy gán **Label = -1** và nêu rõ lý do.
+
+📝 Trả lời theo định dạng:
+Label: -1 / 0 / 1
+Giải thích: [viết bằng tiếng Việt]
+
+---
+
+✅ Ví dụ:
+
+Ví dụ 1:
+Tiêu đề: "Uống nước ép cần tây có thể chữa khỏi ung thư."
+Nguồn: khoedep24h.net
+Label: 0
+Giải thích: Hiện chưa có bằng chứng khoa học nào cho thấy nước ép cần tây có thể chữa ung thư. Đây là thông tin sai lệch thường được chia sẻ sai mục đích.
+
+Ví dụ 2:
+Tiêu đề: "Việt Nam là nước xuất khẩu hồ tiêu lớn nhất thế giới năm 2023."
+Nguồn: vnexpress.net
+Label: 1
+Giải thích: Đây là dữ liệu đã được xác nhận trong các báo cáo thương mại quốc tế. Việt Nam nhiều năm liền dẫn đầu về xuất khẩu hồ tiêu toàn cầu.
+
+Ví dụ 3:
+Tiêu đề: "NASA xác nhận Trái Đất sẽ chìm trong bóng tối 3 ngày vào tháng 6."
+Nguồn: tinla.vn
+Label: 0
+Giải thích: NASA chưa bao giờ công bố điều này. Đây là tin giả cũ từng bị bác bỏ. Không có cơ sở khoa học cho hiện tượng này.
+
+Ví dụ 4:
+Tiêu đề: "Người ngoài hành tinh từng liên lạc với chính phủ Việt Nam năm 1972."
+Nguồn: blogtintuc.net
+Label: -1
+Giải thích: Đây là thông tin không có bằng chứng xác thực, mang tính giả định hoặc thuyết âm mưu. Không thể kiểm chứng được tính đúng sai.
+
+---
+
+📝 Hãy đánh giá bài viết sau:
+
+Tiêu đề: {title}
+Nguồn: {source_domain}
+Ngày xuất bản: {date_publish}
+Ngôn ngữ: {language}
+Tác giả: {authors}
+Đường dẫn: {url}
+
+Nội dung chính:
+{maintext}
+
+Trả lời của bạn:
+Label:
+Giải thích:
+"""
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+prompt_task1_en = f"""
+You are a fact-checking expert. Based on the metadata and full content of a Vietnamese news article, assess whether the information is factual (Label = 1), false/misleading (Label = 0), or ambiguous/uncertain (Label = -1). Return:
+- Label: 1 (true), 0 (false), or -1 (ambiguous)
+- Justification (in Vietnamese): a concise explanation based on logic, public facts, or scientific evidence.
+
+Use the metadata below to support your assessment.
+
+📄 ARTICLE DATA:
+- authors: The author(s) of the article.
+- date_publish: The date the article was originally published.
+- source_domain: The website or domain that published the article (e.g., tuoitre.vn, thoibao.de).
+- title: The headline or title of the article, often summarizing the claim.
+- maintext: The full body of the article, which contains the information or narrative to verify.
+- language: The language of the article (should be 'vi' for Vietnamese).
+- url: The original URL to the article (for source traceability).
+
+🔍 TASK:
+Evaluate whether the article contains factual or misleading information.
+- Use public sources, logic, or science to justify your answer.
+- If the article contains speculative, satirical, opinion-based, or unverifiable claims, assign **Label = -1** and explain why it cannot be clearly fact-checked.
+
+📝 Return your response in the format:
+Label: -1 / 0 / 1
+Justification: [in Vietnamese]
+
+---
+
+✅ Examples:
+
+Example 1:
+Title: "Uống nước ép cần tây có thể chữa khỏi ung thư."
+Source: khoedep24h.net
+Label: 0
+Justification: Hiện chưa có bằng chứng khoa học nào cho thấy nước ép cần tây có thể chữa ung thư. Đây là thông tin sai lệch thường được chia sẻ sai mục đích.
+
+Example 2:
+Title: "Việt Nam là nước xuất khẩu hồ tiêu lớn nhất thế giới năm 2023."
+Source: vnexpress.net
+Label: 1
+Justification: Đây là dữ liệu đã được xác nhận trong báo cáo thương mại quốc tế. Việt Nam dẫn đầu về xuất khẩu hồ tiêu toàn cầu nhiều năm qua.
+
+Example 3:
+Title: "NASA xác nhận Trái Đất sẽ chìm trong bóng tối 3 ngày vào tháng 6."
+Source: tinla.vn
+Label: 0
+Justification: NASA chưa bao giờ công bố điều này. Đây là tin giả cũ từng bị bác bỏ. Không có cơ sở khoa học để hiện tượng này xảy ra.
+
+Example 4:
+Title: "Người ngoài hành tinh từng liên lạc với chính phủ Việt Nam năm 1972."
+Source: blogtintuc.net
+Label: -1
+Justification: Đây là tuyên bố không có bằng chứng xác thực, mang tính giả định hoặc thuyết âm mưu. Không thể kiểm chứng tính đúng sai.
+
+---
+
+📝 Evaluate the following article:
+
+Title: {title}
+Source: {source_domain}
+Date: {date_publish}
+Language: {language}
+Authors: {authors}
+URL: {url}
+
+Main Content:
+{maintext}
+
+Your response:
+Label:
+Justification:
+"""
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
