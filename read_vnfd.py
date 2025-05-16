@@ -58,7 +58,3 @@ if __name__ == "__main__":
         folder_paths = [os.path.join(VNFD_PATH, name, sub) for sub in ["Article_Contents", "Social_Contents"]]
         df = create_excel(folder_paths, output_file=f'Data/{data}_{name}.xlsx', label=label)
         dfs.append(df)
-
-    combined_df = pd.concat(dfs, ignore_index=True)
-    combined_df = combined_df.sample(frac=1).reset_index(drop=True)
-    combined_df.to_excel(f"Data/{data}.xlsx", index=False)
