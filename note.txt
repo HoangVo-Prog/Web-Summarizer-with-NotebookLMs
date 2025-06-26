@@ -1,0 +1,112 @@
+old pipeline
+
+main:
+    Check file PDF_DIRECTORIES // Get the file sources
+
+    # TODO: set up folder corresponded to the row
+
+[
+  {
+    "kind": "customsearch#result",
+    "title": "'Một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam ...",
+    "htmlTitle": "&#39;<b>Một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam</b> ...",
+    "link": "https://tuoitre.vn/mot-vo-duoc-lay-nhieu-chong-de-giai-quyet-tinh-trang-du-thua-nam-gioi-phat-5-trieu-dong-20210303140127192.htm",
+    "displayLink": "tuoitre.vn",
+    "snippet": "Mar 3, 2021 ... Theo đó, trên trang Facebook của mình, chị N. đã dẫn thông tin từ một trang web tên BAOxxx.COM, với nội dung: \"Chính thức: Chính sách một vợ ...",
+    "htmlSnippet": "Mar 3, 2021 <b>...</b> Theo đó, trên trang Facebook của mình, chị N. đã dẫn thông tin từ <b>một</b> trang web tên BAOxxx.COM, với nội dung: &quot;<b>Chính thức</b>: <b>Chính sách một vợ</b>&nbsp;...",
+    "formattedUrl": "https://tuoitre.vn/mot-vo-duoc-lay-nhieu-chong-de-giai-quyet-tinh-trang-d...",
+    "htmlFormattedUrl": "https://tuoitre.vn/mot-vo-duoc-lay-nhieu-chong-de-giai-quyet-tinh-trang-d...",
+    "pagemap": {
+      "cse_thumbnail": [
+        {
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR28pI9SQggOpxqyfHjNR_630gGdzn_ujk3i6VuNh8ouCoPZdxHgsqz3I&s",
+          "width": "310",
+          "height": "163"
+        }
+      ],
+      "metatags": [
+        {
+          "og:image": "https://cdn2.tuoitre.vn/thumb_w/1200/2021/3/3/4be9419d5c57af09f646-16147548390451124838293-1614756016400978203539-crop-1614763774000434668199.png",
+          "apple-itunes-app": "app-id=974433568,app-argument=https://tuoitre.vn/mot-vo-duoc-lay-nhieu-chong-de-giai-quyet-tinh-trang-du-thua-nam-gioi-phat-5-trieu-dong-20210303140127192.htm",
+          "og:type": "'Một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam giới' - phạt 5 triệu đồng",
+          "og:image:width": "800",
+          "og:image:alt": "'Một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam giới' - phạt 5 triệu đồng",
+          "article:published_time": "2021-03-03T14:23:00+07:00",
+          "author": "TUOI TRE ONLINE",
+          "dable:item_id": "20210303140127192",
+          "og:title": "'Một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam giới' - phạt 5 triệu đồng",
+          "og:image:height": "354",
+          "og:image:type": "image/png",
+          "og:description": "TTO - Cô gái trẻ đã đăng tải, chia sẻ thông tin “một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam giới” lên mạng xã hội và bị xử phạt 5 triệu đồng.",
+          "og:image:secure_url": "https://cdn2.tuoitre.vn/thumb_w/1200/2021/3/3/4be9419d5c57af09f646-16147548390451124838293-1614756016400978203539-crop-1614763774000434668199.png",
+          "dable:author": "NHẬT LINH",
+          "article:modified_time": "2021-03-03T16:30:00+07:00",
+          "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=1",
+          "apple-mobile-web-app-capable": "yes",
+          "mobileoptimized": "100",
+          "dable:image": "https://cdn2.tuoitre.vn/zoom/700_390/2021/3/3/4be9419d5c57af09f646-16147548390451124838293-1614756016400978203539-crop-1614763774000434668199.png",
+          "og:url": "https://tuoitre.vn/mot-vo-duoc-lay-nhieu-chong-de-giai-quyet-tinh-trang-du-thua-nam-gioi-phat-5-trieu-dong-20210303140127192.htm",
+          "apple-touch-fullscreen": "yes",
+          "format-detection": "telephone=no"
+        }
+      ],
+      "cse_image": [
+        {
+          "src": "https://cdn2.tuoitre.vn/thumb_w/1200/2021/3/3/4be9419d5c57af09f646-16147548390451124838293-1614756016400978203539-crop-1614763774000434668199.png"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "customsearch#result",
+    "title": "Đăng tin thất thiệt một vợ được lấy nhiều chồng, 2 phụ nữ bị phạt",
+    "htmlTitle": "Đăng tin thất thiệt <b>một vợ được lấy nhiều chồng</b>, 2 phụ nữ bị phạt",
+    "link": "https://thanhnien.vn/dang-tin-that-thiet-mot-vo-duoc-lay-nhieu-chong-2-phu-nu-bi-phat-1851044415.htm",
+    "displayLink": "thanhnien.vn",
+    "snippet": "Mar 9, 2021 ... Chính thức: Chính sách một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam giới”. Căn cứ vào quy định và kết quả xác minh vi ...",
+    "htmlSnippet": "Mar 9, 2021 <b>...</b> ... <b>Chính thức</b>: <b>Chính sách một vợ được lấy nhiều chồng để giải quyết tình trạng dư thừa nam giới</b>”. Căn cứ vào quy định và kết quả xác minh vi&nbsp;...",
+    "formattedUrl": "https://thanhnien.vn/dang-tin-that-thiet-mot-vo-duoc-lay-nhieu-chong-2-ph...",
+    "htmlFormattedUrl": "https://thanhnien.vn/dang-tin-that-thiet-mot-vo-duoc-lay-nhieu-chong-2-ph...",
+    "pagemap": {
+      "cse_thumbnail": [
+        {
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBQqtQ9D1DfdGLs7hT1ySXTozQE7bOPs9tTtTxn6DZEEtu5Jtbe-dKPg&s",
+          "width": "288",
+          "height": "175"
+        }
+      ],
+      "metatags": [
+        {
+          "og:image": "https://images2.thanhnien.vn/zoom/1200_630/Uploaded/lamvien/2021_03_09/0478980dc7ff34a16dee_KWXV.jpg",
+          "og:type": "website",
+          "og:image:width": "600",
+          "twitter:card": "summary_large_image",
+          "copyright": "Copyright (c) by https://thanhnien.vn",
+          "article:section": "Thời sự",
+          "article:published_time": "2021-03-09T16:23:27",
+          "og:site_name": "thanhnien.vn",
+          "author": "https://thanhnien.vn",
+          "dable:item_id": "1851044415",
+          "og:title": "Đăng tin thất thiệt một vợ được lấy nhiều chồng, 2 phụ nữ bị phạt",
+          "og:image:height": "315",
+          "rating": "GENERAL",
+          "site_path": "https://thanhnien.vn",
+          "og:image:type": "image/jpg",
+          "distribution": "Global",
+          "og:description": "Đăng tin thất thiệt 'một vợ được lấy nhiều chồng' trên mạng xã hội, hai phụ nữ ở Lâm Đồng bị cơ quan chức năng xử phạt hành chính 5 triệu đồng/ người.",
+          "twitter:image": "https://images2.thanhnien.vn/zoom/1200_630/Uploaded/lamvien/2021_03_09/0478980dc7ff34a16dee_KWXV.jpg",
+          "fb:app_id": "403237164337145",
+          "dable:author": "Lâm Viên",
+          "viewport": "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1, minimal-ui",
+          "news_keywords": "một vợ lấy nhiều chồng,  tin thất thiệt,  xử phạt hành chính,  Lâm Đồng",
+          "og:url": "https://thanhnien.vn/dang-tin-that-thiet-mot-vo-duoc-lay-nhieu-chong-2-phu-nu-bi-phat-1851044415.htm"
+        }
+      ],
+      "cse_image": [
+        {
+          "src": "https://thanhnien.mediacdn.vn/uploaded/lamvien/2021_03_09/h-kedangtinthatthietbixuphat_FEOO.jpg?width=500"
+        }
+      ]
+    }
+  }
+]

@@ -1,7 +1,7 @@
-from config import VNFD_PATH
+from crawler.config import VNFD_PATH
 
 # Other imports
-import json, os, pandas as pd, openpyxl
+import json, os, pandas as pd
 
 
 def read_json_file(file_path):
