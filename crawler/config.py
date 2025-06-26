@@ -6,11 +6,6 @@ CX = ""
 APIs = [
 ]
 
-# CX_API = [
-#     ("9142078c1c2ee4c76", "AIzaSyDI7dBRyyImKbw8tuCKc6VKlJmPpPGkuN0"), # hgvanything
-#     ("91071eeac4f6b4ba5", "AIzaSyDbXD3IISubT6iDtnuA2HIn65Rz6anZc1o"), # LemNhem
-#     ("4207133612371473a", "AIzaSyBiVxbNSPDP1kBGd77t7_OzDsQzWiZVZrg"), # vohoang22042204
-# ]
 
 
 # Selenium Configuration
